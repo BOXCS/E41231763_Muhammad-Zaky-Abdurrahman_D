@@ -4,22 +4,26 @@ import java.util.Scanner;
 
 public class Tugas1 {
 
-    private static int[] prices = new int[5];
+    private static int[] prices = new int[10];
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("-------------------------------------------------");
 
-        System.out.println("Kharisma Agung Plaza (KAP) >");
-        System.out.println("Promo Belanja Berhadiah");
-        System.out.println("Khusus Pembelian 5 Barang Pertama");
-        System.out.println("Dengan harga minimum Rp 10000,00");
-        System.out.print("Masukkan nama pembeli: ");
+        System.out.println("         Kharisma Agung Plaza (KAP) >          ");
+        System.out.println("          Promo Belanja Berhadiah                ");
+        System.out.println("     Khusus Pembelian 5 Barang Pertama       ");
+        System.out.println("     Dengan harga minimum Rp 10000,00     ");
+        System.out.print("|           Masukkan nama pembeli: ");
         String customerName = scanner.nextLine();
+        
+        System.out.println("-------------------------------------------------");
 
         // Input prices from the user
         boolean pricesEmpty = true;
         for (int i = 0; i < prices.length; i++) {
-            System.out.print("Masukkan harga barang ke-" + (i + 1) + ": ");
+            System.out.print("|Masukkan harga barang ke-" + (i + 1) + ": ");
             String input = scanner.nextLine();
 
             if (input.isEmpty()) {
@@ -76,6 +80,6 @@ public class Tugas1 {
                 count++;
             }
         }
-        return count == 5;
+        return count >= 5;
     }
 }

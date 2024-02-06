@@ -1,4 +1,4 @@
-package Week2.Tugas2;
+package Week2.Acara5_6.Tugas2;
 
 public class Person {
 

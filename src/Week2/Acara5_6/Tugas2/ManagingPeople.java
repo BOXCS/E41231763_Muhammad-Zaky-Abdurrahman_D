@@ -1,9 +1,9 @@
-package Week2.Tugas2;
+package Week2.Acara5_6.Tugas2;
 
 public class ManagingPeople {
 
     public static void main(String[] args) {
-        Person p1 = new Person("Arial", 37);
+        Person p1 = new Person("Arial", 15);
         
         Person p2 = new Person("Joseph", 15);
         
