@@ -35,6 +35,7 @@ public class DrawShapes extends Applet {
     }
     
     public void stop() {
+        
     }
 
     @Override
